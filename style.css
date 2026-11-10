@@ -1,0 +1,86 @@
+body {
+    background-color:  #264653;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+#welcome-screen h1 {
+    color: #F4A261;
+    text-align: center;
+    font-family: "JetBrains Mono", monospace;
+    text-shadow: 3px 3px 5px #0000005a;
+}
+
+#welcome-screen h2 {
+    color: #ECC46A;
+    text-align: center;
+    font-size: larger;
+    font-family: "Tiny5 Duo", sans-serif;
+}
+
+#welcome-screen h3 {
+    color: antiquewhite;
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+}
+
+
+.rules-card {
+    background-color: #5F9EA0;
+    color: #1d3941;
+    padding: 30px 40px;
+    border-radius: 12px;
+    max-width: 500px; 
+    margin: 20px auto;
+    margin-top: 0;
+    box-shadow: 0 0 20px 5px #00000046;
+}
+
+ul {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 400;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button {
+    background-color: #F4A261;
+    color: #1d3941;
+    border-color: #ECC46A;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color:#ECC46A;
+    color: #0b0a0a97;
+}
+
+.players-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.player-card input {
+    font-family: 'Space Mono', monospace;
+    color:#1d3941;
+}
+
+.player-card {
+    background-color: #1d3941;
+    color:antiquewhite;
+}
+
