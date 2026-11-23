@@ -1,28 +1,32 @@
 body {
     background-color:  #264653;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Xanh Mono", monospace;
     font-size: 24px;
 }
 
-#welcome-screen h1 {
+h1 {
     color: #F4A261;
     text-align: center;
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Xanh Mono", monospace;
     text-shadow: 3px 3px 5px #0000005a;
+    margin-top: 30px;
 }
 
-#welcome-screen h2 {
+h2 {
     color: #ECC46A;
     text-align: center;
     font-size: larger;
-    font-family: "Tiny5 Duo", sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: "Xanh Mono", monospace;
 }
 
-#welcome-screen h3 {
+h3 {
     color: antiquewhite;
     text-align: left;
     font-size: 24px;
-    font-family: 'Space Mono', monospace;
+    font-family: "Xanh Mono", monospace;
+    margin-top: 10px;
 }
 
 
@@ -41,19 +45,22 @@ ul {
     text-align: left;
     line-height: 1.6;
     font-size: 18px;
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Nunito", sans-serif;
     font-weight: 400;
+    list-style-position: outside 
 }
 
 .button-container {
     text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 button {
     background-color: #F4A261;
     color: #1d3941;
     border-color: #ECC46A;
-    font-family: 'Space Mono', monospace;
+    font-family: "Nunito", sans-serif;
     font-size: 18px;
     font-weight: bold;
     padding: 15px 30px;
@@ -75,28 +82,21 @@ button:hover {
 }
 
 .player-card input {
-    font-family: 'Space Mono', monospace;
+    font-family: "Nunito", sans-serif;
     color:#1d3941;
     width: 85%;
     padding: 12px;
     border: 2px solid #ddd;
     border-radius: 10px;
     font-size: 15px;
-    outline: none;
 }
 
-#player-screen h1{
-    color:#F4A261;
-    text-align: center;
-    font-size: 20;
-    font-family: 'JetBrains Mono', monospace;
-    text-shadow: 3px 3px 5px #0000005a;
-}
 
 #player-screen h2{
-    color: #ECC46A;
-    font-family: "Tiny5 Duo", sans-serif;
-    margin-bottom: 20px;
+    color: #1d3941;
+    margin-bottom: 40px;
+    font-family: "Xanh Mono", monospace;
+    font-weight: bold;
 }
 
 .player-card {
@@ -110,6 +110,7 @@ button:hover {
     background-color: #5F9EA0;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    margin-top: 40px;
 }
 
 .player-card:hover {
@@ -126,4 +127,87 @@ button:hover {
 
 .player-card:last-child {
     border-top: 6px solid #0d2892;
-}                                   
+}      
+
+.button2-container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.game-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+h1 {
+    color: #F4A261;
+    text-align: center;
+    font-family: "Xanh Mono", monospace;
+    text-shadow: 3px 3px 5px #0000005a;
+    margin-bottom: 0%;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #ECC46A;
+    font-family: "Xanh Mono", monospace;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pile-card,
+.rounds-card {
+    box-sizing: border-box;
+    background-color: #315866;
+    border: 2px solid #5b8990;
+    border-radius: 18px;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    width: 75%;
+    max-width: 1000px;
+    min-height: 220px;
+    padding: 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+.options-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.pile-option,
+.round-option {
+    font-family: "Nunito", sans-serif;
+    color:#1d3941;
+    background-color: #ECC46A;
+    width: 65px;
+    height: 55px;
+    border: 2px solid #04172571;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pile-option:hover,
+.round-option:hover {
+    background-color: #F4A261;
+    color: antiquewhite;
+    transform: translateY(-6px);
+}
+
+.pile-option:active,
+.round-option:active {
+    border-color: aliceblue;
+}
+
